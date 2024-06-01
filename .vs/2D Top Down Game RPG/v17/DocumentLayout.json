@@ -1,0 +1,313 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|d:\\unity\\unity_projects\\my project\\2d top down game rpg\\assets\\scripts\\ui\\activeinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\activeinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\assets\\scripts\\player\\activeweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\activeweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\assets\\scripts\\enemy\\enemypathfinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemypathfinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\assets\\scripts\\player\\slashanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\slashanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\assets\\scripts\\player\\sword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\sword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\assets\\scripts\\player\\damagesource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\damagesource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\assets\\scripts\\misc\\destructible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\misc\\destructible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\assets\\scripts\\misc\\flash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\misc\\flash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\assets\\scripts\\enemy\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\assets\\scripts\\enemy\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\assets\\scripts\\misc\\knockback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CAE31D-2987-E6C4-77C2-E03EE585214A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\misc\\knockback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\assets\\scripts\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\assets\\scripts\\weaponinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\weaponinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\assets\\scripts\\iweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\iweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\unity\\unity_projects\\my project\\2d top down game rpg\\assets\\scripts\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\unity\\unity_projects\\my project\\2d top down game rpg\\assets\\scripts\\bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 102,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ActiveInventory.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\UI\\ActiveInventory.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ActiveInventory.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\UI\\ActiveInventory.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\ActiveInventory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T12:41:44.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "InventorySlot.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\InventorySlot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySlot.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\InventorySlot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventorySlot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T10:21:33.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Staff.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Staff.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Staff.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Staff.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Staff.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T10:18:06.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WeaponInfo.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\WeaponInfo.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WeaponInfo.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\WeaponInfo.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WeaponInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T10:13:03.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Bow.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Bow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Bow.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Bow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Bow.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T13:49:39.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Sword.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Player\\Sword.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Sword.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Player\\Sword.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Sword.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwCIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T08:15:46.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ActiveWeapon.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Player\\ActiveWeapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\ActiveWeapon.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Player\\ActiveWeapon.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\ActiveWeapon.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAkwAYAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T13:43:54.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IWeapon.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\IWeapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\IWeapon.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\IWeapon.cs",
+              "RelativeToolTip": "Assets\\Scripts\\IWeapon.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T13:42:09.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Destructible.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Misc\\Destructible.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Misc\\Destructible.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Misc\\Destructible.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Misc\\Destructible.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T17:57:46.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DamageSource.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Player\\DamageSource.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\DamageSource.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Player\\DamageSource.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\DamageSource.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T15:28:34.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EnemyAI.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Enemy\\EnemyAI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyAI.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Enemy\\EnemyAI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyAI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:26:41.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnemyPathFinding.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Enemy\\EnemyPathFinding.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyPathFinding.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Enemy\\EnemyPathFinding.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyPathFinding.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:26:36.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwGYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T08:49:45.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SlashAnim.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Player\\SlashAnim.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\SlashAnim.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Player\\SlashAnim.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\SlashAnim.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T08:08:15.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EnemyHealth.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Enemy\\EnemyHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyHealth.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Enemy\\EnemyHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyHealth.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T07:22:38.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Knockback.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Misc\\Knockback.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Misc\\Knockback.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Misc\\Knockback.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Misc\\Knockback.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T07:21:41.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Flash.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Misc\\Flash.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Misc\\Flash.cs",
+              "ToolTip": "D:\\Unity\\Unity_projects\\My project\\2D Top Down Game RPG\\Assets\\Scripts\\Misc\\Flash.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Misc\\Flash.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T07:21:20.394Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
