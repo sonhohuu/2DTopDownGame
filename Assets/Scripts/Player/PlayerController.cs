@@ -9,6 +9,7 @@ public class PlayerController : Singleton<PlayerController>
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float dashSpeed = 4f;
     [SerializeField] private TrailRenderer myTrailRenderer;
+    [SerializeField] private Transform weaponCollider;
 
     private PlayerControlls playerControlls;
     private Vector2 movement;
@@ -16,6 +17,7 @@ public class PlayerController : Singleton<PlayerController>
     private Animator myAnimator;
     private SpriteRenderer mySpriteRender;
     private float startingMoveSpeed;
+    private Knockback Knockback;
 
     private bool facingLeft = false;
     private bool isDashing = false;
@@ -28,6 +30,7 @@ public class PlayerController : Singleton<PlayerController>
         rigidbody2D = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         mySpriteRender = GetComponent<SpriteRenderer>();
+        Knockback = GetComponent<Knockback>();
     }
 
     private void Start()
@@ -52,6 +55,10 @@ public class PlayerController : Singleton<PlayerController>
         AdjustPlayerFacingDirection();
         Move();
     }
+    public Transform GetWeaponCollider()
+    {
+        return weaponCollider;
+    }
 
     private void PlayerInput()
     {
@@ -63,6 +70,8 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Move()
     {
+        if(Knockback.GettingKnockedBack) { return; }
+
         rigidbody2D.MovePosition(rigidbody2D.position + movement * (moveSpeed * Time.deltaTime));
     }
 

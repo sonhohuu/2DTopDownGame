@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ActiveWeapon : Singleton<ActiveWeapon>
 {
-    [SerializeField] private MonoBehaviour currentActiveWeapon;
+    public MonoBehaviour CurrentActiveWeapon { get; private set; }
 
     private PlayerControlls playerControls;
     private float timeBetweenAttacks;
@@ -62,6 +62,25 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         isAttacking = false;
     }
 
+    public void NewWeapon(MonoBehaviour newWeapon)
+    {
+        CurrentActiveWeapon = newWeapon;
+
+        AttackCooldown();
+        timeBetweenAttacks = (CurrentActiveWeapon as IWeapon).GetWeaponInfo().weaponCooldown;
+    }
+    private void AttackCooldown()
+    {
+        isAttacking = true;
+        StopAllCoroutines();
+        StartCoroutine(TimeBetweenAttacksRoutine());
+    }
+
+    public void WeaponNull()
+    {
+        CurrentActiveWeapon = null;
+    }
+
     private void StartAttacking()
     {
         attackButtonDown = true;
@@ -74,16 +93,12 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
 
     private void Attack()
     {
-        if (attackButtonDown && !isAttacking)
+        if (attackButtonDown && !isAttacking && CurrentActiveWeapon)
         {
-            isAttacking = true;
-            //AttackCooldown();
-            (currentActiveWeapon as IWeapon).Attack();
+            AttackCooldown();
+            (CurrentActiveWeapon as IWeapon).Attack();
         }
     }
 
-    public void ToggleIsAttacking(bool value)
-    {
-        isAttacking = value;
-    }
+
 }

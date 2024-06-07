@@ -2,17 +2,55 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Staff : MonoBehaviour
+public class Staff : MonoBehaviour, IWeapon
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private WeaponInfo weaponInfo;
+    [SerializeField] private GameObject magicLaser;
+    [SerializeField] private Transform magicLaserSpawnPoint;
+
+    private Animator myAnimator;
+
+    readonly int ATTACK_HASH = Animator.StringToHash("Attack");
+
+    private void Awake()
     {
-        
+        myAnimator = GetComponent<Animator>();
+    }
+    public void Attack()
+    {
+        myAnimator.SetTrigger(ATTACK_HASH);
+        SpawnStaffProjectileAnimEvent();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        MouseFollowWithOffset();
+    }
+    public void SpawnStaffProjectileAnimEvent()
+    {
+        GameObject newLaser = Instantiate(magicLaser, magicLaserSpawnPoint.position, Quaternion.identity);
+        newLaser.GetComponent<MagicLaser>().UpdateLaserRange(weaponInfo.weaponRange);
+    }
+
+    private void MouseFollowWithOffset()
+    {
+        Vector3 mousePos = Input.mousePosition;
+        Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(PlayerController.Instance.transform.position);
+
+        float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+
+        if (mousePos.x < playerScreenPoint.x)
+        {
+            ActiveWeapon.Instance.transform.rotation = Quaternion.Euler(0, -180, angle);
+        }
+        else
+        {
+            ActiveWeapon.Instance.transform.rotation = Quaternion.Euler(0, 0, angle);
+        }
+    }
+
+    public WeaponInfo GetWeaponInfo()
+    {
+        return weaponInfo;
     }
 }
