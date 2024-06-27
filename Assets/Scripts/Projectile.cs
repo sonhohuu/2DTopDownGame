@@ -34,12 +34,13 @@ public class Projectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
+        BossHealth boss = other.gameObject.GetComponent<BossHealth>();
         Indestructible indestructible = other.gameObject.GetComponent<Indestructible>();
         PlayerHealth player = other.gameObject.GetComponent<PlayerHealth>();
 
-        if (!other.isTrigger && (enemyHealth || indestructible || player))
+        if (!other.isTrigger && (enemyHealth || indestructible || player || boss))
         {
-            if ((player && isEnemyProjectile) || (enemyHealth && !isEnemyProjectile))
+            if ((player && isEnemyProjectile) || ((boss || enemyHealth) && !isEnemyProjectile))
             {
                 player?.TakeDamage(1, transform);
                 Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
@@ -50,6 +51,7 @@ public class Projectile : MonoBehaviour
                 Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
                 Destroy(gameObject);
             }
+
         }
     }
 

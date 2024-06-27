@@ -179,26 +179,32 @@
                     "action": "Keyboard",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
+                }
+            ]
+        },
+        {
+            "name": "UI submit",
+            "id": "ff37a42a-5af3-42cf-8dc0-4ff794ebb87d",
+            "actions": [
+                {
+                    "name": "Submit",
+                    "type": "Button",
+                    "id": "50c19f97-9171-49be-86af-da02b2ff23ac",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
                 {
                     "name": "",
-                    "id": "c60ab934-54b5-467e-a705-8f8bcdf43830",
-                    "path": "<Keyboard>/4",
+                    "id": "c73cac7c-3907-419e-8362-2f883e70f694",
+                    "path": "<Keyboard>/enter",
                     "interactions": "",
-                    "processors": "Scale(factor=4)",
+                    "processors": "",
                     "groups": "",
-                    "action": "Keyboard",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "516dd4a1-fb95-43db-b305-35e5b73fe763",
-                    "path": "<Keyboard>/5",
-                    "interactions": "",
-                    "processors": "Scale(factor=5)",
-                    "groups": "",
-                    "action": "Keyboard",
+                    "action": "Submit",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

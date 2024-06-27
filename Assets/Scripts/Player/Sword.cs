@@ -63,7 +63,6 @@ public class Sword : MonoBehaviour, IWeapon
 
     private void UpdateWeaponDirection()
     {
-
         Vector3 mousePos = Input.mousePosition;
         Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(PlayerController.Instance.transform.position);
 

@@ -38,11 +38,18 @@ public class PlayerController : Singleton<PlayerController>
         playerControlls.Combat.Dash.performed += _ => Dash();
 
         startingMoveSpeed = moveSpeed;
+
+        ActiveInventory.Instance.EquipStartingWeapon();
     }
 
     private void OnEnable()
     {
         playerControlls.Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerControlls?.Disable();
     }
 
     private void Update()
@@ -70,7 +77,7 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Move()
     {
-        if(Knockback.GettingKnockedBack) { return; }
+        if(Knockback.GettingKnockedBack || PlayerHealth.Instance.isDead) { return; }
 
         rigidbody2D.MovePosition(rigidbody2D.position + movement * (moveSpeed * Time.deltaTime));
     }
@@ -94,8 +101,9 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Dash()
     {
-        if (!isDashing)
+        if (!isDashing && Stamina.Instance.CurrentStamina > 0)
         {
+            Stamina.Instance.UseStamina();
             isDashing = true;
             moveSpeed *= dashSpeed;
             myTrailRenderer.emitting = true;

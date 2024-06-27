@@ -201,26 +201,32 @@ public partial class @PlayerControlls: IInputActionCollection2, IDisposable
                     ""action"": ""Keyboard"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
+                }
+            ]
+        },
+        {
+            ""name"": ""UI submit"",
+            ""id"": ""ff37a42a-5af3-42cf-8dc0-4ff794ebb87d"",
+            ""actions"": [
+                {
+                    ""name"": ""Submit"",
+                    ""type"": ""Button"",
+                    ""id"": ""50c19f97-9171-49be-86af-da02b2ff23ac"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""c60ab934-54b5-467e-a705-8f8bcdf43830"",
-                    ""path"": ""<Keyboard>/4"",
+                    ""id"": ""c73cac7c-3907-419e-8362-2f883e70f694"",
+                    ""path"": ""<Keyboard>/enter"",
                     ""interactions"": """",
-                    ""processors"": ""Scale(factor=4)"",
+                    ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Keyboard"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""516dd4a1-fb95-43db-b305-35e5b73fe763"",
-                    ""path"": ""<Keyboard>/5"",
-                    ""interactions"": """",
-                    ""processors"": ""Scale(factor=5)"",
-                    ""groups"": """",
-                    ""action"": ""Keyboard"",
+                    ""action"": ""Submit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -239,6 +245,9 @@ public partial class @PlayerControlls: IInputActionCollection2, IDisposable
         // Inventory
         m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
         m_Inventory_Keyboard = m_Inventory.FindAction("Keyboard", throwIfNotFound: true);
+        // UI submit
+        m_UIsubmit = asset.FindActionMap("UI submit", throwIfNotFound: true);
+        m_UIsubmit_Submit = m_UIsubmit.FindAction("Submit", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -442,6 +451,52 @@ public partial class @PlayerControlls: IInputActionCollection2, IDisposable
         }
     }
     public InventoryActions @Inventory => new InventoryActions(this);
+
+    // UI submit
+    private readonly InputActionMap m_UIsubmit;
+    private List<IUIsubmitActions> m_UIsubmitActionsCallbackInterfaces = new List<IUIsubmitActions>();
+    private readonly InputAction m_UIsubmit_Submit;
+    public struct UIsubmitActions
+    {
+        private @PlayerControlls m_Wrapper;
+        public UIsubmitActions(@PlayerControlls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Submit => m_Wrapper.m_UIsubmit_Submit;
+        public InputActionMap Get() { return m_Wrapper.m_UIsubmit; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(UIsubmitActions set) { return set.Get(); }
+        public void AddCallbacks(IUIsubmitActions instance)
+        {
+            if (instance == null || m_Wrapper.m_UIsubmitActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_UIsubmitActionsCallbackInterfaces.Add(instance);
+            @Submit.started += instance.OnSubmit;
+            @Submit.performed += instance.OnSubmit;
+            @Submit.canceled += instance.OnSubmit;
+        }
+
+        private void UnregisterCallbacks(IUIsubmitActions instance)
+        {
+            @Submit.started -= instance.OnSubmit;
+            @Submit.performed -= instance.OnSubmit;
+            @Submit.canceled -= instance.OnSubmit;
+        }
+
+        public void RemoveCallbacks(IUIsubmitActions instance)
+        {
+            if (m_Wrapper.m_UIsubmitActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IUIsubmitActions instance)
+        {
+            foreach (var item in m_Wrapper.m_UIsubmitActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_UIsubmitActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public UIsubmitActions @UIsubmit => new UIsubmitActions(this);
     public interface IMovementActions
     {
         void OnMove(InputAction.CallbackContext context);
@@ -454,5 +509,9 @@ public partial class @PlayerControlls: IInputActionCollection2, IDisposable
     public interface IInventoryActions
     {
         void OnKeyboard(InputAction.CallbackContext context);
+    }
+    public interface IUIsubmitActions
+    {
+        void OnSubmit(InputAction.CallbackContext context);
     }
 }

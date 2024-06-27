@@ -18,7 +18,6 @@ public class ActiveInventory : Singleton<ActiveInventory>
     private void Start()
     {
         playerControls.Inventory.Keyboard.performed += ctx => ToggleActiveSlot((int)ctx.ReadValue<float>());
-        ToggleActiveHighlight(0);
     }
 
     private void OnEnable()

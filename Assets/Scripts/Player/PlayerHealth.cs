@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerHealth : Singleton<PlayerHealth>
 {
     public bool isDead { get; private set; }
 
-    [SerializeField] private int maxHealth = 3;
+    [SerializeField] private int maxHealth = 10;
     [SerializeField] private float knockBackThrustAmount = 10f;
     [SerializeField] private float damageRecoveryTime = 1f;
+    private GameObject bossHealthContainer;
 
-    //private Slider healthSlider;
+    private Slider healthSlider;
     private int currentHealth;
     private bool canTakeDamage = true;
     private Knockback knockback;
@@ -27,21 +29,29 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
         flash = GetComponent<Flash>();
         knockback = GetComponent<Knockback>();
+        bossHealthContainer = GameObject.Find("Boss Heart Container");
     }
 
     private void Start()
     {
         isDead = false;
         currentHealth = maxHealth;
+        CameraController.Instance.SetPlayerCameraFollow();
 
-        //UpdateHealthSlider();
+        UpdateHealthSlider();
     }
 
     private void OnCollisionStay2D(Collision2D other)
     {
         EnemyAI enemy = other.gameObject.GetComponent<EnemyAI>();
+        BossHealth boss = other.gameObject.GetComponent<BossHealth>();
 
         if (enemy)
+        {
+            TakeDamage(1, other.transform);
+        }
+
+        if (boss && boss.isAlive)
         {
             TakeDamage(1, other.transform);
         }
@@ -52,7 +62,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
         if (currentHealth < maxHealth)
         {
             currentHealth += 1;
-            //UpdateHealthSlider();
+            UpdateHealthSlider();
         }
     }
 
@@ -66,7 +76,16 @@ public class PlayerHealth : Singleton<PlayerHealth>
         canTakeDamage = false;
         currentHealth -= damageAmount;
         StartCoroutine(DamageRecoveryRoutine());
-        //UpdateHealthSlider();
+        UpdateHealthSlider();
+        CheckIfPlayerDeath();
+    }
+
+    public void TakeDamage(int damageAmount)
+    {
+        currentHealth -= damageAmount;
+        ScreenShakeManager.Instance.ShakeScreen();
+        StartCoroutine(flash.FlashRoutine());
+        UpdateHealthSlider();
         CheckIfPlayerDeath();
     }
 
@@ -76,6 +95,10 @@ public class PlayerHealth : Singleton<PlayerHealth>
         {
             isDead = true;
             Destroy(ActiveWeapon.Instance.gameObject);
+            if (bossHealthContainer != null)
+            {
+                Destroy(bossHealthContainer.gameObject);
+            }
             currentHealth = 0;
             GetComponent<Animator>().SetTrigger(DEATH_HASH);
             StartCoroutine(DeathLoadSceneRoutine());
@@ -95,14 +118,14 @@ public class PlayerHealth : Singleton<PlayerHealth>
         canTakeDamage = true;
     }
 
-    //private void UpdateHealthSlider()
-    //{
-    //    if (healthSlider == null)
-    //    {
-    //        healthSlider = GameObject.Find(HEALTH_SLIDER_TEXT).GetComponent<Slider>();
-    //    }
+    private void UpdateHealthSlider()
+    {
+        if (healthSlider == null)
+        {
+            healthSlider = GameObject.Find(HEALTH_SLIDER_TEXT).GetComponent<Slider>();
+        }
 
-    //    healthSlider.maxValue = maxHealth;
-    //    healthSlider.value = currentHealth;
-    //}
+        healthSlider.maxValue = maxHealth;
+        healthSlider.value = currentHealth;
+    }
 }
